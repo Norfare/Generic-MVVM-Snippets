@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import SwiftUI
+
+struct &lt;#name#&gt;View&lt;ViewModel&gt;: View where ViewModel: &lt;#name#&gt;ViewModelProtocol {
+    
+    @StateObject var viewModel: ViewModel
+    
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+    
+    public init(viewModel: ViewModel) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+    }
+}
+
+#if DEBUG
+struct &lt;#name#&gt;View_Previews: PreviewProvider {
+    static var previews: some View {
+        &lt;#name#&gt;View(viewModel: Mock&lt;#name#&gt;ViewModel())
+    }
+}
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1C566BB0-A927-4476-BB28-28AA23CAA837</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>View</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
